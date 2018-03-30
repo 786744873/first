@@ -13,7 +13,7 @@ namespace CITest.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "测试", "测试Value" };
         }
 
         // GET api/values/5
