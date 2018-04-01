@@ -19,6 +19,7 @@ namespace CITest
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://*:4555")
                 .UseStartup<Startup>()
                 .Build();
     }

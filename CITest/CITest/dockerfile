@@ -1,0 +1,7 @@
+﻿FROM microsoft/aspnetcore
+
+WORKDIR /test
+
+COPY . /test
+
+ENTRYPOINT ["dotnet", "CITest.dll"]
